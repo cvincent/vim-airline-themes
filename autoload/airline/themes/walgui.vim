@@ -72,6 +72,14 @@ let s:IA2   = [s:gui15, s:gui00, s:cterm06, s:cterm02]
 let s:IA3   = [s:gui15, s:gui00, s:cterm09, s:cterm01]
 let g:airline#themes#walgui#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 
-let g:airline#themes#walgui#palette.accents = {
-      \ 'red': ['', s:gui01, '', ''],
-      \ }
+let g:airline#themes#walgui#palette.normal.airline_error = [s:gui00, s:gui01, s:cterm00, s:cterm01]
+let g:airline#themes#walgui#palette.insert.airline_error = [s:gui00, s:gui01, s:cterm00, s:cterm01]
+let g:airline#themes#walgui#palette.replace.airline_error = [s:gui00, s:gui01, s:cterm00, s:cterm01]
+let g:airline#themes#walgui#palette.visual.airline_error = [s:gui00, s:gui01, s:cterm00, s:cterm01]
+let g:airline#themes#walgui#palette.inactive.airline_error = [s:gui00, s:gui01, s:cterm00, s:cterm01]
+
+let g:airline#themes#walgui#palette.normal.airline_warning = [s:gui00, s:gui03, s:cterm00, s:cterm03]
+let g:airline#themes#walgui#palette.insert.airline_warning = [s:gui00, s:gui03, s:cterm00, s:cterm03]
+let g:airline#themes#walgui#palette.replace.airline_warning = [s:gui00, s:gui03, s:cterm00, s:cterm03]
+let g:airline#themes#walgui#palette.visual.airline_warning = [s:gui00, s:gui03, s:cterm00, s:cterm03]
+let g:airline#themes#walgui#palette.inactive.airline_warning = [s:gui00, s:gui03, s:cterm00, s:cterm03]
